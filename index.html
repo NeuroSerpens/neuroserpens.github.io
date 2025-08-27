@@ -3,12 +3,21 @@
 <head>
 <title>Neuro Serpens</title>
 <style>
-  body { background: linear-gradient(90deg, black 8%, white 16%, white 18%, black 26%); }
-  img#main { position: absolute; width: 16%; height: 70%; left: 9%; top: 4%; clip-path: ellipse(50% 50%); opacity: 0.8; }
-  img#sign { position: absolute; width: 16%; height: 16%; left: 9%; bottom: 8%; }
-  section { position: absolute; top: 4%; right: 4%; width: 66%; height: 82%; border: 1px solid white; }
+  body { background: linear-gradient(90deg, black 8%, white 16%, white 18%, black 26%); font-family: Georgia; }
+  img#mn { position: absolute; width: 16%; height: 60%; left: 9%; top: 4%; clip-path: ellipse(50% 50%); opacity: 0.8; }
+  img#sg { position: absolute; width: 16%; height: 16%; left: 9%; bottom: 10%; }
+  section { position: absolute; top: 4%; right: 4%; width: 66%; height: 82%; overflow: hidden; }
+  div#carousel { position: absolute; left: 0%; width: 500%; height: 100%; }
+  aside { position: absolute; width: 20%; height: 100%; color: white; }
+  aside#main { left: 0%; text-align: center; }
+  aside#writer { left: 20%; text-align: justify; }
+  aside#writer img { width: 18%; height: 40%; }
+  aside#developer { left: 40%; text-align: justify; }
+  aside#linguist { left: 60%; text-align: justify; }
+  aside#linguist img { width: 20%; height: 50%; }
+  aside#musician { left: 80%; text-align: justify; }
   nav { position: absolute; bottom: 8%; width: 100%; height: 4%; border-bottom: 1px solid white; }
-  a { position: absolute; color: white; font-family: Georgia; font-style: italic; font-size: 200%; background: rgba(31, 31, 31, 0.3); width: 10%; height: 100%; text-align: center; clip-path: ellipse(50% 50%); }
+  nav a { position: absolute; color: white; font-style: italic; font-size: 200%; background: rgba(31, 31, 31, 0.3); width: 12%; height: 100%; text-align: center; }
   a#wr { right: 54%; }
   a#dv { right: 40%; }
   a#ln { right: 26%; }
@@ -16,15 +25,79 @@
 </style>
 </head>
 <body>
-  <img id = 'main' src = 'assets/main.png'>
-  <img id = 'sign' src = 'assets/sign.png'>
+  <img class = 'cpos' id = 'mn' src = 'assets/main.png'>
+  <img id = 'sg' src = 'assets/sign.png'>
   <section>
+    <div id = 'carousel'>
+    <aside id = 'main'>
+      <br><br><br>
+      <p>Welcome to my small corner of the internet.</p>
+      <p>You can click one of the navigation links below for more, or just click the picture to come back here.</p>
+      <p>For any inquiries, send me an email at serpensneuro@gmail.com or follow my <a href = 'https://www.instagram.com/neuroserpens/'>instagram</a></p>
+    </aside>
+    <aside id = 'writer'>
+      <br><br><br>
+      <p>As a writer, I focus on existentialist philosophy and my main publication is called Servant of Darkness, Master of Light.</p>
+      <p>One of the main points I make in this work is that happiness or fulfillment in life depends on a meticulous balance of pleasure and penance.</p>
+      <p>Only by constantly challenging mind and body, can their power be cultivated and thus our sufferings in life diminished and overcome.</p>
+      <p>An infinite journey about which I constantly learn more too, which in turn results in more updates for the book.</p>
+      <p>You can currently find it in the three languages I speak comfortably, but more versions are planned for the future.</p>
+      <img src = 'assets/serv1.png'>
+      <img src = 'assets/serv2.png'>
+      <img src = 'assets/serv3.png'>
+    </aside>
+    <aside id = 'developer'>
+      <br><br><br>
+      <p>As a software developer, I have four years' worth of official work experience as a full stack developer.</p>
+      <p>But, more than a decade of experience doing exploratory and competitive programming - mainly through codewars where I am ranked among the top 0.5% of coders.</p>
+      <img src = 'assets/code1.png'>
+      <img src = 'assets/code2.png'>
+      <p>I am very much interested in scientific or game programming and am also creating my own RPG system</p>
+      <p>It will be based mostly based on my philosophy writings but also have a touch of fantasy.</p>
+    </aside>
+    <aside id = 'linguist'>
+      <br><br><br>
+      <p>As a linguist, I have done teaching, translation, transcription, subtitling, and proofreading work in several fields - legal, medical, technological, fiction, and so on.</p>
+      <p>I have also studied applied linguistics and developed methods for faster language acquisition.</p>
+      <p>I am fluent in English, Spanish, and Portuguese, but also study several other languages.</p>
+      <p>My strongest candidates for a fourth language are German, Mandarin Chinese, and Russian.</p>
+      <p>It is also worth mentioning I proofread the following fiction works:</p>
+      <img src = 'assets/vilmord.png'>
+      <img src = 'assets/azamius.png'>
+    </aside>
+    <aside id = 'musician'>
+      <br><br><br>
+      <p>As an amateur musician, I am in love with improvisational music, and have also been hired to make game soundtracks.</p>
+      <p>You can listen to a bit of what I make in the following video:</p>
+      <iframe width="640" height="480"
+        src="https://www.youtube.com/embed/Gyq5Kc2lVbs?si=eEiGxvTgB9OnaOiD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </aside>
+    </div>
   </section>
   <nav>
-    <a id = 'wr'>Writer</a>
-    <a id = 'dv'>Developer</a>
-    <a id = 'ln'>Linguist</a>
-    <a id = 'ms'>Musician</a>
+    <a class = 'cpos' id = 'wr'>Writer</a>
+    <a class = 'cpos' id = 'dv'>Developer</a>
+    <a class = 'cpos' id = 'ln'>Linguist</a>
+    <a class = 'cpos' id = 'ms'>Musician</a>
   </nav>
+
+  <script>
+    let cpos = document.querySelectorAll('.cpos'),
+        clst = { 'mn': 0, 'wr': 100, 'dv': 200, 'ln': 300, 'ms': 400 },
+        crsl = document.querySelector('#carousel')
+    for (let a = 0, l = cpos.length; a < l; a += 1)
+      cpos[a].addEventListener('click', (e) => {
+          crsl.style.opacity = 0
+          setTimeout( () => {
+            crsl.style.left = `-${clst[e.target.id]}%`
+            crsl.style.opacity = 1
+          }, 300)
+        }
+      )
+  </script>
 </body>
 </html>
